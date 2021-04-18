@@ -733,7 +733,7 @@ img {
 /* Footer */
 
 footer {
-    display: flex;
+    
     background-color: var(--background-secondary);
 }
 
@@ -765,7 +765,7 @@ address {
    
 }
 
-.icon-social-links-footer h3{
+.wrapper-footer h3{
 
     margin-bottom: 20px;
 
@@ -773,6 +773,7 @@ address {
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
+    letter-spacing: 0.03em;
     color: var(--background-color);
 }
 
@@ -814,11 +815,95 @@ address {
     background-color: var(--fill);
 }
 
-.social-link-footer:focus {
+ .social-link-icon-footer:focus {
 
     background-color: var(--fill);
 }
-/* Portfolio */
+
+.wrapper-footer .form-subscription {
+
+     margin-left: 93px; 
+   
+}
+
+.form-subscription input {
+
+    width: 358px;
+    margin: 0;
+    padding-left: 16px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: var(--background-secondary);
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    color: var(--background-color)
+
+}
+
+.form-subscription input:focus {
+
+    outline: none;
+
+}
+
+.form-subscription .subscribe {
+
+    width: 200px;
+    margin-left: 12px;
+    padding-left: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 0;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+
+    background-color: var(--fill);
+
+}
+
+
+ .subscribe .btn-subscribe-name {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    color: var(--background-color)
+
+}
+
+.btn-subscribe-name::after {
+
+    content: '';
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+    background-image: url(/images/icon-send.svg);
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+
+
+
+/*============= Portfolio =========================*/
+
+
 
 .portfolio {
     
