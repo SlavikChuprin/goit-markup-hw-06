@@ -1133,41 +1133,49 @@ address {
     
 }
 
-.agree-with-contract {
-    
-        position: absolute;
-        z-index: -1;
-        opacity: 0;
 
-                  
- }
+.checkbox-label::before {
 
- .agree-with-contract + label {
-     position: relative;
-     padding: 0 0 0 60px;
-     cursor: pointer;
-    }
+    content: '';
+    margin-right: 7px;
+    display: inline-block;
+    width: 16px;
+    height: 15px;
+    border: 2px solid var(--text-h);
+}
+
+.agree-with-contract:checked + .checkbox-label::before  {
+
+    border: none;
+    background-image: url(/images/icon-bg-chekin.svg), url(/images/icon-check-in.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     
+    
+}
  .checkbox-label {
-         
+
+    display: flex;
+    align-items: center;
+    cursor: pointer;
     font-family: Roboto;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.78;
     letter-spacing: 0.03em;
-    color: var(--main-text);
    
-    }
    
-    .checkbox-label .contract-link{
+}
+   
+.checkbox-label .contract-link {
    
        text-decoration: underline;
        color: var(--fill); 
         
-    }
-    
-    .submit-btn  {
+}
+.submit-btn  {
         
     width: 200px;
     height: 50px;
