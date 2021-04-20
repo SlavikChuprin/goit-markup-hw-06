@@ -25,6 +25,7 @@ color email, tel. footer: rgba(255, 255, 255, 0.6); */
     --icon-still: #AFB1B8;
     --boarder-cards: #EEEEEE;
     --backdrop:rgba(0, 0, 0, 0.2);
+    --bg-btn-hover: #188CE8;
     
 }
 html {
@@ -350,6 +351,11 @@ nav .nav-items .item {
     background-color: var(--fill);
     
 } 
+
+.btn-serves-reserved:hover {
+
+    background-color: var(--bg-btn-hover);
+}
 
 /* Features */
 
@@ -745,7 +751,7 @@ address {
 }
 
 .wrapper-footer .form-subscription {
-
+    
     margin-left: 93px; 
      
 }
@@ -773,8 +779,17 @@ address {
 
 }
 
-.form-subscription .subscribe-btn {
+.window-email-sudscribe {
 
+    display: flex;
+    align-items: center;
+}
+.form-subscription .subscribe-btn {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
     width: 200px;
     height: 50px;
     margin-left: 12px;
@@ -791,13 +806,19 @@ address {
 
 }
 
+.subscribe-btn:focus {
+
+    outline: none;
+}
+
+.subscribe-btn:hover {
+
+    background-color: var(--bg-btn-hover);
+}
 
  .subscribe-btn .btn-subscribe-name {
      
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
+       
     font-family: Roboto;
     font-style: normal;
     font-weight: 700;
@@ -808,16 +829,13 @@ address {
 
 }
 
-.btn-subscribe-name::after {
+.icon-btn-email-subscribe {
 
-    content: '';
     display: inline-block;
     width: 24px;
     height: 24px;
     margin-left: 10px;
-    background-image: url(/images/icon-send.svg);
-    background-repeat: no-repeat;
-    text-align: center;
+    
 }
 
 
@@ -1145,30 +1163,24 @@ address {
     align-items: center;
 }
 
-.checkbox-label::before {
+.icon-checkin {
 
-    content: '';
+    
     margin-right: 7px;
-    display: inline-block;
     width: 16px;
     height: 15px;
     border: 2px solid var(--text-h);
 
-    transition-property: background-color, background-image ;
+    transition-property: background-color, border ;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
-.agree-with-contract:checked + .checkbox-label::before  {
+.agree-with-contract:checked + .icon-checkin {
 
     border: none;
-    background-image: url(/images/icon-checkin.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
     background-color: var(--fill);
-    
-    
+      
 }
  .checkbox-label {
 
@@ -1220,7 +1232,7 @@ address {
 .submit-btn:hover,
 .submit-btn:focus {
 
-    background-color: #188CE8;
+    background-color: var(--bg-btn-hover);
     outline: none;
 }
 /* ====================/ MODAL====================== */
