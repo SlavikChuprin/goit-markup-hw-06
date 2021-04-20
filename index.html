@@ -409,7 +409,7 @@
          </div>
         </div>
         </footer>
-   <div class="backdrop " data-modal>
+   <div class="backdrop is-hidden" data-modal>
        <div class="modal">
             <btn class="modal-closed-btn is-hidden" data-modal-close>
                 <svg class="icon-closed-modal">
@@ -421,13 +421,13 @@
 
                 <h2>Оставьте свои данные, мы вам перезвоним</h2>
 
-            <form class="signup-form" name="signup-form">
+            <form class="signup-form" name="signup-form" autocomplete="off">
                 <label>
                     Имя
                     <span class="icon-form-wrapper">
                     <input type="text" name="name" />
                     <svg class="icon-form-svg"  >
-                        <use href="./images/icon.svg#icon-twitter"></use>
+                        <use href="./images/icon.svg#icon-person"></use>
                     </svg>
                     </span>
                 </label>
@@ -436,7 +436,7 @@
                     <span class="icon-form-wrapper">
                     <input type="tel" name="phone" />
                     <svg  class="icon-form-svg" >
-                        <use href="./images/icon.svg#icon-closed"></use>
+                        <use href="./images/icon.svg#icon-phone"></use>
                     </svg>
                     </span>
                 </label>
@@ -444,8 +444,8 @@
                     Почта
                     <span class="icon-form-wrapper">
                     <input type="email" name="email" />
-                    <svg class="icon-form-svg" fill='black'>
-                        <use href="./images/icon.svg#icon-closed"></use>
+                    <svg class="icon-form-svg" >
+                        <use href="./images/icon.svg#icon-email"></use>
                     </svg>
                     </span>
                 </label>
@@ -454,16 +454,18 @@
                     Комментарий
                     <textarea name="feedback" placeholder="Введите текст"></textarea>
                 </label>
-                <input class="agree-with-contract  "  
+
+                <input class="agree-with-contract  visually-hidden"  
                 type="checkbox" 
                 name="agree-with-contract" 
                 value="agree" 
-                id="agree-with-contract" />
+                id="agree-with-contract"
+                 />
                 
                 <label for="agree-with-contract" class="checkbox-label">
                     <span> Соглашаюсь с рассылкой и принимаю
                     <a class="contract-link" href="#">Условия договора</a></span>
-                  </label>
+                </label>
                 <button class="submit-btn" type="submit">Отправить</button>
             </form>
             </div>

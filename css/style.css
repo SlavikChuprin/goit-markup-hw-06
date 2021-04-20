@@ -1123,8 +1123,8 @@ address {
 }
 .icon-form-wrapper .icon-form-svg {
     
-    width: 12px;
-    height: 12px;
+    width: 18px;
+    height: 18px;
     position: absolute;
     top: 0;
     left: 0;
@@ -1147,10 +1147,11 @@ address {
 .agree-with-contract:checked + .checkbox-label::before  {
 
     border: none;
-    background-image: url(/images/icon-bg-chekin.svg), url(/images/icon-check-in.svg);
+    background-image: url(/images/icon-checkin.svg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    background-color: var(--fill);
     
     
 }
