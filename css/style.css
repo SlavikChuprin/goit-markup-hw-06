@@ -1154,7 +1154,7 @@ address {
 .agree-with-contract:checked + .checkbox-label::before  {
 
     border: none;
-    background-image: url(/images/icon-checkin.svg);
+    background-image: url(./images/icon-checkin.svg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
