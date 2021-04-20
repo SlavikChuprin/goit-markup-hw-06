@@ -748,6 +748,7 @@ address {
      
 }
 
+
 .form-subscription input {
     
     width: 358px;
@@ -760,8 +761,7 @@ address {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     background-color: var(--background-secondary);
-
-    
+ 
 
 }
 
@@ -920,7 +920,7 @@ address {
 .projects-cards:hover,
 .projects-cards:focus {
     
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(180, 75, 75, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 
@@ -1133,7 +1133,10 @@ address {
     
 }
 
+.checkbox-hidden-wrapp {
 
+    position: relative;
+}
 .checkbox-label::before {
 
     content: '';
@@ -1142,6 +1145,10 @@ address {
     width: 16px;
     height: 15px;
     border: 2px solid var(--text-h);
+
+    transition-property: background-color, background-image ;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
 .agree-with-contract:checked + .checkbox-label::before  {
@@ -1197,12 +1204,15 @@ address {
     text-align: center;
     letter-spacing: 0.06em;
     color: var(--background-color);
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
 .submit-btn:hover,
 .submit-btn:focus {
 
-    background: #188CE8;
+    background-color: #188CE8;
     outline: none;
 }
 /* ====================/ MODAL====================== */
